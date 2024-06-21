@@ -1,3 +1,4 @@
+import 'package:demo2/Detailpage.dart';
 import 'package:demo2/Splash_screen.dart';
 import 'package:demo2/Widget/Awesome.dart';
 import 'package:demo2/Widget/Bmiapp.dart';
@@ -19,10 +20,12 @@ import 'package:demo2/Widget/Expended.dart';
 import 'package:demo2/Widget/Foo.dart';
 import 'package:demo2/Widget/Gradient.dart';
 import 'package:demo2/Widget/Gridview.dart';
+import 'package:demo2/Widget/Hero_1.dart';
 import 'package:demo2/Widget/Icon.dart';
 import 'package:demo2/Widget/Image.dart';
 import 'package:demo2/Widget/Inkwell.dart';
 import 'package:demo2/Widget/Circleavatar.dart';
+import 'package:demo2/Widget/List_Wheel.dart';
 import 'package:demo2/Widget/Listview.dart';
 import 'package:demo2/Widget/Mapping.dart';
 import 'package:demo2/Widget/Margin_Padding.dart';
@@ -68,7 +71,7 @@ class _MyAppState extends State<MyApp> {
       //    titleMedium: TextStyle(fontSize: 30,fontWeight: FontWeight.w500,fontStyle: FontStyle.italic),
       //  )
       // ),
-      home: Cross_feedWidget()
+      home: List_WheelWidget()
     );
   }
 
