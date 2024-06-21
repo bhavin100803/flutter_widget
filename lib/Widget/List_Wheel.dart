@@ -23,13 +23,22 @@ class _List_WheelWidgetState extends State<List_WheelWidget> {
           title: Text("3D list"),
           backgroundColor: Colors.blue,
         ),
-        body:ListWheelScrollView(
-          itemExtent: 200,
-          children: arrIndex.map((Value) =>  Container(
-            width: double.infinity,
-            color: Colors.blue,
-          )).toList(),
+        body:Center(
+          child: ListWheelScrollView(
+            itemExtent: 200,
+            children: arrIndex.map((Value) =>  Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: Center(child: Text('$Value',style: TextStyle(fontSize: 21,color: Colors.white),)),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(21)
+                ),
+                width: double.infinity,
+              ),
+            )).toList(),
 
+          ),
         )
     );
   }
